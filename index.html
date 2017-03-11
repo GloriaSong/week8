@@ -50,15 +50,24 @@
                     3109449,
                     3423045
                 ],
+                markLine: {
+                    lineStyle: {
+                        normal: {
+                            type: 'dashed'
+                        }
+                    },
+                    data: [
+                        [{
+                            type: 'min'
+                        }, {
+                            type: 'max'
+                        }]
+                    ]
+                }
             }]
-            "MarkPoint": {
-                "data": {
-                    "type": "max",
-                    "name": "MAX"
-                },
+        }
 
-            }
-        };
+
         // Use the option to display chart
         var myChart1 = echarts.init(document.getElementById('mybar'));
         myChart1.setOption(option);
